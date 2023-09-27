@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /* font import */
+
+* {     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}       /* margin-padding-box reset */
+
+/* general page styling begins here*/
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #fefff5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-bottom: 50px;
+    
+} 
+
+p {
+    white-space: pre-wrap;
+}
+
+h1 {
+    white-space: pre-wrap;
+}
+
+:any-link {
+    text-decoration: none;
+    color: black;
+}  
+
+/* general page styling ends here*/
+
+
+/* header styling begings here  */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    margin-top: 15px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 40px;
+    vertical-align: baseline;
+    z-index: 2;
+    top: 0;
+    
+} 
+
+.headerBackground {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    background-color: #fefff5;
+    z-index: 1;
+}
+
+.logo {
+    font-weight: 700;
+    padding-top: 10px;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.navMobile:hover .dropdown {
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownContent {
+    display: block;
+}
+
+
+.mainNav {
+    padding-top: 10px;
+    font-weight: 400;
+    width: 45vw;
+    right: 0;
+    
+}
+.mainNav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+/* header styling ends here  */
+
+
+.pageNav {
+    position: fixed;
+    top: 45vh;
+    right: 2vw;
+    z-index: 2;
+    font-size: small;
+}       /* internal navigation */
+
+
+
+.intro {
+    width: 85%; 
+    margin: auto;
+    margin-top: 260px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+ } /* intro section */
+ 
+
+
+/* work node styling begings here  */
+
+ .workNode {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+
+ }
+
+ .workContent {
+    padding: 0 4% 5% 4%;
+ }
+
+ .workNode h1 {
+    font-size: xx-large;
+ }
+
+ img, iframe, video, .gallery {
+    width: 100%;
+    height: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important; /*! not sure why I need these importants but without them the padding is sometimes coming back */
+ }
+
+
+ .workNode h3 {
+    font-family: "Montserrat", sans-serif;
+    white-space: pre-wrap;
+}
+
+/* work node styling ends here  */
+
+
+/* work node spot adjustments begin here  */
+
+#seatTitle {
+    padding-bottom: 3%;
+}
+
+/* work node spot adjustments end here  */
+
+
+/* responsive desktop view adjustments start here  */
+
+@media (min-width: 700px) {
+    
+    .navMobile {
+    display: none; 
+    }
+
+    .pageNav li {
+        font-size: medium;
+    }
+
+    .workNode {
+        width: 70%;
+        margin: auto;
+        margin-top: 7%;
+    }
+
+    .workNode iframe {
+        width: 100%;
+        height: 65vh;
+    }
+
+    /* individual gallery desktop mode begins here */
+
+    #gallerySeat {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "seatPic1 seatPic1"
+        "seatPic2 seatPic3";
+    }
+
+    #galleryIe {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+        "ieVid1 ieVid2"
+        "ieVid3 ieVid4";
+    }
+
+    #galleryMyself {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6, fr);
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "myself1 myself1 myself1 myself2 myself2 myself2"
+        ". myself3 myself3 myself3 myself3 ."
+        "myself4 myself4 myself4 myself5 myself5 myself5";
+    }
+
+     /* individual gallery desktop mode ends here */
+}
+
+/* responsive desktop view adjustments start here  */
+
+
+/* mobile view responsive adjustments needed begins here   */
+
+@media (max-width: 700px) {
+    .mainNav {
+        display: none; 
+    }
+    .pageNav {
+        display: none;
+     } 
+}
+
+/* grid area assignments begin here*/
+
+#seatPic1 {
+    grid-area: seatPic1;
+}
+
+#seatPic2 {
+    grid-area: seatPic2;
+}
+
+#seatPic3 {
+    grid-area: seatPic3;
+}
+
+#ieVid1 {
+    grid-area: ieVid1;
+}
+
+#ieVid2 {
+    grid-area: ieVid2;
+}
+
+#ieVid3 {
+    grid-area: ieVid3;
+}
+
+#ieVid4 {
+    grid-area: ieVid4;
+}
+
+#myself1 {
+    grid-area: myself1
+}
+
+#myself2 {
+    grid-area: myself2
+}
+
+#myself3 {
+    grid-area: myself3
+}
+
+#myself4 {
+    grid-area: myself4
+}
+
+#myself5 {
+    grid-area: myself5
+}
+
+/* end of grid area assignments end here*/
+
+
+/* web arrow */
+
+/*! I don't understand how the down code is seeded into the arrow code if it's not within the brackets?" */
+
+.arrow {
+    margin: 240px 0px 50px 0px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }

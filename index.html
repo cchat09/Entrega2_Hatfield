@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerBackground"></div> <!-- For visibility when scrolling over content -->
+    <header> <!-- Header includes internal page navigation of page. Elements are fixed as user scrolls -->
+        <div class="leftContainer">
+            <a href="./index.html"><div class="logo">Christopher Hatfield</div></a> <!-- Links to this same page -->
+        </div>
+        <div class="rightContainer">
+            <nav class="mainNav"> <!-- Main navigation bar for desktop view -->
+                <ul>
+                    <a href="./index.html"><li class="nav">Work</li></a> <!-- First item in nav bar, links to this same page -->
+                    <a href="./aboutMe/indexAbout.html"><li class="nav">About me</li></a>
+                    <a href="./writing/indexWriting.html"><li class="nav">Writing</li></a>
+                    <a href="./flashFiction/indexFlash.html"><li class="nav">Flash fiction</li></a>
+                    <a href="./contact/indexContact.html"><li class="nav">Contact</li></a> <!-- Last item in nav bar -->
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="navMobile"> <!-- Dropdown navigation for mobile view -->
+            <button>Explore</button> <!-- Would prefer this to be an icon, come back to that later -->
+                <div class="dropdown">
+                    <a href="./index.html" class="dropdownContent">Work</a> <!-- First item in nav bar, links to this same page -->
+                    <a href="./aboutMe/indexAbout.html" class="dropdownContent">About me</a>
+                    <a href="./writing/" class="dropdownContent">Writing</a>
+                    <a href="./flashFiction/indexFlash.html" class="dropdownContent">Flash fiction</a>
+                    <a href="./contact/indexContact.html" class="dropdownContent">Contact</a>
+                </div>
+        </nav>
+    </header>
+
+        <nav class="pageNav"> <!-- Internal links to autoscroll to different sections. Only visible in desktop -->
+            <ul>
+                <a href="./index.html"><li class="pageNavItem">Start</li></a> <!-- First item in nav bar --> 
+                <a href="#maybach"><li class="pageNavItem">Maybach</li></a>
+                <a href="#seat"><li class="pageNavItem">Seat</li></a>
+                <a href="#ie"><li class="pageNavItem">IE Alumni</li></a>
+                <a href="#myself"><li class="pageNavItem">Myself</li></a> <!-- Last item in nav bar -->
+            </ul>
+        </nav>
+
+
+    <section class="intro"> <!-- Large intro text and arrow -->
+<h1 class="hello">
+I'm Chris, an international copywriter and creative.
+
+Start scrolling to see my work.</h1>
+        <p><i class="arrow down"></i></p> <!-- Arrow to invite user to scroll -->
+    </section>
+    
+
+    <section class="workNode" id="maybach"> <!-- First portfolio content section. Title, video, and short text showing Maybach work -->
+        <h1 class="workContent">MERCEDES-MAYBACH</h1>
+
+        <iframe width="100%" height="478" src="https://www.youtube.com/embed/uuIo991ioHU" title="Mercedes-Maybach | The Legend continues" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="workContent"></iframe> <!-- video content -->
+
+        <p class="workContent">To celebrate the new Mercedes-Maybach S-Class, and 100 years of Maybach excellence, we needed a campaign unlike any other with a style and script that would speak to an audience across multiple cultures. We needed to explore what transforms greatness into legend.</p>
+    </section> <!-- End of Maybach section -->
+
+
+    <section class="workNode" id="seat"> <!-- Portfolio content section. Title, image gallery, shot text, and video showing Seat work -->
+        <h1 class="workContent" id="seatTitle">SEAT</h1>
+        <h3 class="workContent">Take a piece of art. 
+Get the specs of the new SEAT Arona.</h3>
+        <div class="workContent gallery" id="gallerySeat"> <!-- image gallery -->
+            <img src="./assets/images/work/seat/portfolio_work_seat_1_big.jpg" alt="An artificial brick wall showing a handpainted mural of a man diving. One of the bricks is missing and in the corner there is a TV screen showing the artist painting the wall and the words 'Do your thing.'" id="seatPic1"> <!-- Image 1, full row 1 of gallery in desktop view -->
+
+            <img src="./assets/images/work/seat/portfolio_work_seat_2_mid.jpg" alt="Person taking a brick from the artificial wall/mural." id="seatPic2"> <!-- Image 2, half of row 2 of gallery in desktop view -->
+
+            <img src="./assets/images/work/seat/portfolio_work_seat_3_mid.jpg" alt="Person holding brick to see the other side, which has a picture of a Seat Arona and information." id="seatPic3"> <!-- Image 3, half of row 2 of gallery in desktop view -->
+        </div>
+
+        <p class="workContent">The "do your thing" spirit of the Arona is about unabashed self expression. Tearing down barriers. So why not tear down a wall, and in the process, give every visitor a little piece of art?
+
+Mateo, our collaborating artist, created an original piece on a custom built wall, made of bricks that could be removed. Visitors could choose their favorite and take it with them, with the Arona technical specs on the back.</p>
+
+        <h3 class="workContent">The making of:</h3>
+
+        <video controls="controls" class="workContent">
+            <source src="./assets/videos/seatVideo.mp4" type="video/mp4" />
+           </video> <!-- video content -->
+    </section> <!-- End of Seat section -->
+    
+
+    <section class="workNode" id="ie">
+        <h1 class="workContent">IE ALUMNI</h1>
+        <div class="workContent gallery" id="galleryIe"> <!-- video gallery -->
+            <video controls="controls" id="ieVid1">
+                <source src="./assets/videos/ie1_glasses.mp4" type="video/mp4">
+            </video> <!-- video content, half of first row in desktop view -->
+            
+            <video controls="controls" id="ieVid2">
+                <source src="./assets/videos/ie2_pizza.mp4" type="video/mp4">
+            </video> <!-- video content, second half of first row in desktop view -->
+
+            <video controls="controls" poster="./assets/images/work/ie/travelPoster.png" id="ieVid3">
+                <source src="./assets/videos/ie3_travel.mp4" type="video/mp4">
+            </video> <!-- video content, first half of second row in desktop view -->
+
+            <video controls="controls" poster="./assets/images/work/ie/coffeePoster.png" id="ieVid4">
+                <source src="./assets/videos/ie4_coffee.mp4" type="video/mp4">
+            </video> <!-- video content, second half of second row in desktop view -->
+        </div>
+
+        <p class="workContent">IE University understandably loves to talk about its values and global vision - a lot. So when it was time to promote their alumni discounts on social media, we convinced them to put a playful spin on their usual content.</p>
+
+    </section> <!-- End of IE section -->
+
+
+    <section class="workNode" id="myself">
+        <h1 class="workContent">MYSELF</h1>
+
+        <div class="workContent gallery" id="galleryMyself"> <!-- image gallery -->
+            <img id="myself1" src="./assets/images/work/myself/myself1.jpg" alt="yellow poster with funny literal translation of a Spanish saying promoting copywriting services"> <!-- vertical image 1, 1st half of row 1 in desktop view  -->
+
+            <img id="myself2" src="./assets/images/work/myself/myself2.jpg" alt="red poster with funny literal translation of a Spanish saying promoting copywriting services"> <!-- vertical image 2, 2nd half of row 1 in desktop view  -->
+
+            <img id="myself3" src="./assets/images/work/myself/myself3.png" alt="blue tweet with funny literal translation of a Spanish saying promoting copywriting services"> <!-- horizontal image 3, all of row 2 in desktop view -->
+
+            <img id="myself4" src="./assets/images/work/myself/myself4.png" alt="green poster with funny literal translation of a Spanish saying promoting copywriting services"> <!-- horizontal image 4, 1st half of row 1 in desktop view  -->
+
+            <img id="myself5" src="./assets/images/work/myself/myself5.png" alt="purple poster with funny literal translation of a Spanish saying promoting copywriting services "> <!-- horizontal image 5, 2nd half of row 1 in desktop view  -->
+
+
+        </div>
+
+        <p>One thing Spain is short on: native English copywriters. And the ones that are here often don't speak much Spanish; <i>no me toques las pelotas</i> will leave them scratching their heads.
+
+Literal translations of colorful phrases quickly communicated a simple message: I actually know what Spanish speakers are saying. Plus, they sound hilarious. 
+            
+I sent flyers and tweets to agencies in Spain and drummed up some business. Eaten bread, as they say here in Spain.</p>
+    </section>
+
+</body>
+</html>
