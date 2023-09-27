@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-    <body>
-        <div class="headerBackground"></div> <!-- For visibility when scrolling over content -->
-        <header> <!-- Header includes internal page navigation of page. Elements are fixed as user scrolls -->
-            <div class="leftContainer">
-                <a href="./index.html"><div class="logo">Christopher Hatfield</div></a> <!-- Links to this same page -->
-            </div>
-            <div class="rightContainer">
-                <nav class="mainNav"> <!-- Main navigation bar for desktop view -->
-                    <ul>
-                        <a href="./index.html"><li class="nav">Work</li></a> <!-- First item in nav bar, links to this same page -->
-                        <a href="./aboutMe/indexAbout.html"><li class="nav">About me</li></a>
-                        <a href="./writing/indexWriting.html"><li class="nav">Writing</li></a>
-                        <a href="./flashFiction/indexFlash.html"><li class="nav">Flash fiction</li></a>
-                        <a href="./contact/indexContact.html"><li class="nav">Contact</li></a> <!-- Last item in nav bar -->
-                    </ul>
-                </nav>
-            </div>
-    
-            <nav class="navMobile"> <!-- Dropdown navigation for mobile view -->
-                <button>Explore</button> <!-- Would prefer this to be an icon, come back to that later -->
-                    <div class="dropdown">
-                        <a href="./index.html" class="dropdownContent">Work</a> <!-- First item in nav bar, links to this same page -->
-                        <a href="./aboutMe/indexAbout.html" class="dropdownContent">About me</a>
-                        <a href="./writing/" class="dropdownContent">Writing</a>
-                        <a href="./flashFiction/indexFlash.html" class="dropdownContent">Flash fiction</a>
-                        <a href="./contact/indexContact.html" class="dropdownContent">Contact</a>
-                    </div>
+<body>
+    <div class="headerBackground"></div> <!-- For visibility when scrolling over content -->
+    <header> <!-- Header includes internal page navigation of page. Elements are fixed as user scrolls -->
+        <div class="leftContainer">
+            <a href="./index.html">
+                <div class="logo">Christopher Hatfield</div>
+            </a> <!-- Links to this same page -->
+        </div>
+        <div class="rightContainer">
+            <nav class="mainNav"> <!-- Main navigation bar for desktop view -->
+                <ul>
+                    <a href="./index.html">
+                        <li class="nav">Work</li>
+                    </a> <!-- First item in nav bar, links to this same page -->
+                    <a href="./aboutMe/indexAbout.html">
+                        <li class="nav">About me</li>
+                    </a>
+                    <a href="./writing/indexWriting.html">
+                        <li class="nav">Writing</li>
+                    </a>
+                    <a href="./flashFiction/indexFlash.html">
+                        <li class="nav">Flash fiction</li>
+                    </a>
+                    <a href="./contact/indexContact.html">
+                        <li class="nav">Contact</li>
+                    </a> <!-- Last item in nav bar -->
+                </ul>
             </nav>
-        </header>
+        </div>
 
-        <section class="imageMe">
-            <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/90a59754-a715-4a9a-a535-0f04574659d2/Capture.jpg?format=1500w" alt="A picture of a man in front of a waterfall giving a thumbs up to the camera and smiling">
-        </section>
+        <nav class="navMobile"> <!-- Dropdown navigation for mobile view -->
+            <button>Explore</button> <!-- Would prefer this to be an icon, come back to that later -->
+            <div class="dropdown">
+                <a href="./index.html" class="dropdownContent">Work</a>
+                <!-- First item in nav bar, links to this same page -->
+                <a href="./aboutMe/indexAbout.html" class="dropdownContent">About me</a>
+                <a href="./writing/" class="dropdownContent">Writing</a>
+                <a href="./flashFiction/indexFlash.html" class="dropdownContent">Flash fiction</a>
+                <a href="./contact/indexContact.html" class="dropdownContent">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-        <section class="aboutMeText">
-            <h1>ABOUT ME</h1>
-            <article>I'm a copywriter and creative thinker who helps international brands connect with a world-wide audience. So far, some of those brands have been Mercedes-Benz, Nivea, Visa, SEAT, MAPFRE, and IE Business School. I have a strong background in promotions using innovative technology and fully-integrated 360 campaigns. My student work was recognized in contests including New York Best's Advertising, The One Show, el FIAP, and more.
+    <div class="container-md, m-5, p-5">
+        <div class="row">
+            
+                <section class="col-md-6">
+                    <img class="imageMe" src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/90a59754-a715-4a9a-a535-0f04574659d2/Capture.jpg?format=1500w"
+                        alt="A picture of a man in front of a waterfall giving a thumbs up to the camera and smiling">
+                </section>
+
+            <section class="col-md-6 aboutMeText">  
+                    <h1 class="text-center m-4">ABOUT ME</h1>
+                    <article>I'm a copywriter and creative thinker who helps international brands connect with a world-wide audience. So far, some of those brands have been Mercedes-Benz, Nivea, Visa, SEAT, MAPFRE, and IE Business School. I have a strong background in promotions using innovative technology and fully-integrated 360 campaigns. My student work was recognized in contests including New York Best's Advertising, The One Show, el FIAP, and more.
 
 I'm originally from the United States, but right now I'm living in Madrid, Spain, working as a Senior Copywriter for Publicis Groupe. I'm a native English speaker, my Spanish is excellent, and my German is OK. Outside of work, I enjoy creative writing, comic books, and visiting waterfalls.
-                
+
 Looking for my resume? It’s all on my <a href="https://www.linkedin.com/in/christopher-hatfield-79091038/" target="_blank" rel="noopener noreferrer">LinkedIn.</a></article>
-        </section>
+                </section>
 
-        <h1></h1>
+        </div>
+    </div>
 
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -302,6 +302,7 @@ button {
 /* end of grid area assignments end here*/
 
 
+
 /* web arrow */
 
 /*! I don't understand how the down code is seeded into the arrow code if it's not within the brackets?" */
@@ -317,3 +318,18 @@ button {
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
+
+/* starting here, css code specifically for aboutMe page */
+
+article {
+    white-space: pre-wrap;
+}
+
+    /* responsive desktop view adjustments start here  */
+
+        @media (min-width: 768px) { 
+            .aboutMeText {
+                margin-top: 30vh;
+            } 
+        }
+/* aboutMe page specific code ends here */
