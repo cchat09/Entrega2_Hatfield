@@ -29,7 +29,7 @@ h1 {
 :any-link {
     text-decoration: none;
     color: black;
-}  
+}
 
 /* general page styling ends here*/
 
@@ -321,15 +321,29 @@ button {
 
 /* starting here, css code specifically for aboutMe page */
 
+
 article {
     white-space: pre-wrap;
+}
+
+article :any-link {
+    text-decoration: underline;
 }
 
     /* responsive desktop view adjustments start here  */
 
         @media (min-width: 768px) { 
+            
+            
+            .imageMe {
+         
+                margin-top: 10vh;
+               
+            }
+            
             .aboutMeText {
-                margin-top: 30vh;
+               
+                margin-top: 10vh;
             } 
         }
 /* aboutMe page specific code ends here */
